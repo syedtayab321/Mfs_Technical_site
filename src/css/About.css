@@ -1,0 +1,75 @@
+.about-page {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.about-row {
+  margin-bottom: 30px;
+}
+
+.about-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #333;
+}
+
+.about-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 20px;
+}
+
+.about-btn {
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.about-btn .btn-link{
+  color: white;
+  text-decoration: none;
+}
+.about-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-team-image {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-vision {
+  padding: 40px 0;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-vision h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #333;
+}
+
+.about-vision p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #777;
+  line-height: 1.8;
+  margin-top: 20px;
+}

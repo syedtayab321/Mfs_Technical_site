@@ -1,0 +1,128 @@
+.service-detail-screen {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.service-detail-screen .service-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.service-detail-screen .service-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.service-detail-screen .service-price {
+  font-size: 1.3rem;
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.service-detail-screen ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.service-detail-screen ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.service-detail-screen .contact-btn {
+  background-color: #FFD700;
+  border: none;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-detail-screen .contact-btn:hover {
+  background-color: #FFC107;
+}
+
+@media (max-width: 767px) {
+  .service-detail-screen .service-title {
+    font-size: 2rem;
+  }
+
+  .service-detail-screen .service-description {
+    font-size: 1.1rem;
+  }
+
+  .service-detail-screen .service-price {
+    font-size: 1.1rem;
+  }
+}
+.service-detail-screen {
+  padding: 3rem 1.5rem;
+  background-color: #f8f9fa;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.service-title {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.service-price {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.features-title {
+  color: #333;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.feature-item {
+  font-size: 1rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.feature-item i {
+  color: #28a745;
+  margin-right: 0.5rem;
+}
+
+.contact-btn {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

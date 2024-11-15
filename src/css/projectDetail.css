@@ -1,0 +1,91 @@
+/* Project Details Page */
+.project-details {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.project-image {
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.price-range {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.features-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features-list li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.features-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-size: 1.2rem;
+  top: 0;
+}
+
+.project-details-text {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background-color: #3498db;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+}
