@@ -14,10 +14,12 @@ import ProjectDetails from "./Pages/ProjectDetails";
 import Footer from "./components/commonComponents/footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TopBar from "./components/commonComponents/TopBar";
 function App() {
     AOS.init({ duration: 2700 });
   return (
     <>
+          <TopBar/>
           <CustomNavbar />
           <Routes>
               <Route path="/" element={<HomePage />} />

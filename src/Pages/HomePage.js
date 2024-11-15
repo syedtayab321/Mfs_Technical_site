@@ -10,14 +10,12 @@ import './../css/HomePage.css';
 import './../css/About.css';
 import './../css/services.css';
 import './../css/Contact.css';
-import TopBar from "../components/commonComponents/TopBar";
 import {Button, Card, Col, Row} from "react-bootstrap";
 import {FaEnvelope, FaPhone, FaWhatsapp} from "react-icons/fa";
 
 const HomePage = () => {
   return (
     <div>
-      <TopBar/>
       <HeroSection />
       <AboutPage/>
       <ServicesSection />
