@@ -35,13 +35,16 @@
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
-
+.service-detail-screen .btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .service-detail-screen .contact-btn {
-  background-color: #FFD700;
   border: none;
   font-size: 1.1rem;
   padding: 12px 30px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: background-color 0.3s ease-in-out;
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -9,10 +9,14 @@ import homeImage from '../assets/images/background.webp';
 import floor from './../assets/images/image1.jpg';
 import painting from './../assets/images/paniting-02.jpg';
 import electrical from './../assets/images/electrical.jpg';
+import OrderModal from "../components/commonComponents/OrdersModals";
 
 const ServiceDetailScreen = () => {
   const { id } = useParams();
+  const [showOrderModal, setShowOrderModal] = useState(false);
 
+  const openModal = () => setShowOrderModal(true);
+  const closeModal = () => setShowOrderModal(false);
   const serviceDetails = {
     KitchenRenovation: {
       title: 'Kitchen Renovation',
@@ -71,7 +75,14 @@ const ServiceDetailScreen = () => {
   const service = serviceDetails[id] || {};
 
   return (
-    <section className="service-detail-screen">
+    <>
+       <OrderModal
+           show={showOrderModal}
+           handleClose={closeModal}
+           serviceName={service.title}
+           Price={service.price}
+       />
+       <section className="service-detail-screen">
       <Container>
         <Row>
           <Col md={6}>
@@ -102,15 +113,21 @@ const ServiceDetailScreen = () => {
                       </li>
                     ))}
                 </ul>
-                <Button variant="primary" href="https://wa.me/+971581329990" target='_blank' className="contact-btn mt-3">
+                <div className='btns'>
+                  <Button variant="success" href="https://wa.me/+971581329990" target='_blank' className="contact-btn mt-3">
                        Contact Us for More Details
                 </Button>
+                  <Button variant="primary" onClick={openModal}  className="contact-btn mt-3">
+                       Book Now
+                </Button>
+                </div>
               </div>
             </motion.div>
           </Col>
         </Row>
       </Container>
     </section>
+    </>
   );
 };
 

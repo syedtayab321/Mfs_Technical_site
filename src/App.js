@@ -15,6 +15,7 @@ import Footer from "./components/commonComponents/footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TopBar from "./components/commonComponents/TopBar";
+import OrdersPage from "./Pages/myOrdersPage";
 function App() {
     AOS.init({ duration: 2700 });
   return (
@@ -29,7 +30,8 @@ function App() {
               <Route path="/portfolio" element={<PortfolioSection />} />
               <Route path="/serviceDetails/:id" element={<ServiceDetailScreen />} />
               <Route path="/about-details" element={<AboutUsDetailsScreen />} />
-               <Route path="/project-details/:id" element={<ProjectDetails />} />
+              <Route path="/project-details/:id" element={<ProjectDetails />} />
+              <Route path="/orders" element={<OrdersPage />} />
           </Routes>
              <Footer/>
             <FloatingWhatsAppButton />
