@@ -83,6 +83,8 @@ const OrdersPage = () => {
                     <th>Email</th>
                     <th>Location</th>
                     <th>Date</th>
+                    <th>Service</th>
+                    <th>Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -94,6 +96,8 @@ const OrdersPage = () => {
                       <td>{order.email}</td>
                       <td>{order.location}</td>
                       <td>{new Date(order.orderDate).toLocaleString()}</td>
+                      <td>{order.serviceName}</td>
+                      <td>{order.price}</td>
                     </tr>
                   ))}
                 </tbody>
